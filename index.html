@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMHOSA Alumni - Members Portal</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+    <script src="./scripts/apexcharts.js"></script>
+</head>
+
+<body>
+    <div class="col-12 d-flex content-wrapper">
+        <section class="sidenavbar bg-dark text-center sticky-top">
+
+            <div class="position-relative d-flex flex-wrap align-items-center" style="height: 100vh;">
+
+                <div class="col-12 py-3 position-absolute top-0">
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1V2C16 2.55228 15.5523 3 15 3H1C0.447715 3 0 2.55228 0 2V1ZM0 7C0 6.44772 0.447715 6 1 6H15C15.5523 6 16 6.44772 16 7V8C16 8.55229 15.5523 9 15 9H1C0.447715 9 0 8.55228 0 8V7ZM1 12C0.447715 12 0 12.4477 0 13V14C0 14.5523 0.447715 15 1 15H15C15.5523 15 16 14.5523 16 14V13C16 12.4477 15.5523 12 15 12H1Z"
+                                fill="#FFFFFF" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- LINKS -->
+                <div class="list-group col-12 px-1 text-center" style="margin-top: -50px;">
+                    <a href="/" class="list-group-item list-group-item-action active px-0 rounded py-2 mb-3"
+                        aria-current="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#EEEEEE" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M515.478 448.087V182.085h358.437v266.002H515.478ZM86.085 630.696V182.085h358.437v448.611H86.085Zm429.393 337.523V519.608h358.437v448.611H515.478Zm-429.393 0V702.218h358.437v266.001H86.085Zm106.002-443.524h146.434V288.087H192.087v236.608Zm429.392 337.523h146.434V625.609H621.479v236.609Zm0-520.133h146.434v-53.998H621.479v53.998ZM192.087 862.218h146.434v-53.999H192.087v53.999Zm146.434-337.523Zm282.958-182.61Zm0 283.524Zm-282.958 182.61Z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded bg-dark px-0 py-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M200 993.523q-44.305 0-75.153-30.849-30.848-30.848-30.848-75.153V714l125.827-140.827 75.653 75.653L217.174 736h525.652l-76.87-86.304 75.653-75.653L866.001 714v173.521q0 44.305-30.848 75.153-30.848 30.849-75.153 30.849H200Zm0-106.002h560V816H200v71.521Zm206.347-234.044L277.782 523.782q-30.913-31.478-30.413-75.435.5-43.958 31.413-74.871l184.695-184.695q30.914-30.914 75.088-31.348 44.175-.435 75.088 31.044l128.565 129.13q30.913 31.478 31.065 75.218.152 43.74-30.761 74.653L555.523 654.477q-30.914 30.914-74.588 30.696-43.675-.217-74.588-31.696ZM668.13 392.129 538.435 264.13 352.87 449.694 482 578.259l186.13-186.13ZM200 887.521V816v71.521Z" />
+                        </svg>
+                    </a>
+                    <a href="./pages/members.html" class="list-group-item list-group-item-action border-0 rounded bg-dark px-0 py-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M17.955 933.306v-173q0-39.088 27.457-66.044 27.457-26.957 65.544-26.957h134.392q21.695 0 37.717 8.304t25.891 23.609q30.131 41.826 74.892 64.956 44.761 23.131 96.152 23.131 51.826 0 96.87-23.131 45.043-23.13 74.739-64.956 10.739-15.305 26.543-23.609 15.805-8.304 36.5-8.304h134.957q39.087 0 66.044 26.957 26.957 26.956 26.957 66.044v173H636.609v-96.087q-35 21.609-74.653 33.195-39.652 11.587-81.956 11.587-41.304 0-81.174-11.804-39.869-11.804-74.869-33.413v96.522H17.955ZM480 736q-35.174 0-66.63-16.37-31.457-16.369-52.761-45.108Q340.218 645 311.044 630.5T246.217 616q27.653-35.87 99.218-58.783Q417 534.304 480 534.304t134.848 22.913q71.848 22.913 99.5 58.783-35.218 0-64.609 14.217-29.391 14.218-49.783 44.305-20.304 29.174-52.043 45.326T480 736ZM160 604.695q-52.261 0-88.957-36.696-36.696-36.695-36.696-88.956 0-52.696 36.696-89.174Q107.74 353.39 160 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696Zm640 0q-52.261 0-88.957-36.696-36.695-36.695-36.695-88.956 0-52.696 36.695-89.174Q747.739 353.39 800 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696ZM480 471.694q-52.261 0-88.957-36.695-36.695-36.696-36.695-88.957 0-52.696 36.695-89.174 36.696-36.479 88.957-36.479 52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.957-36.478 36.695-89.174 36.695Z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded bg-dark px-0 py-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M67 869.001V762.999H893v106.002H66.999Zm52.217-248.783-59.913-34.522 32.304-57.174H26.999v-69.044h64.609l-32.304-55.174 59.913-34.522 32.304 55.739 32.305-55.739 59.348 34.522-32.304 55.174h64.608v69.044H210.87l32.304 57.174-59.348 34.522-32.305-57.739-32.304 57.739Zm328.479 0-59.914-34.522 32.305-57.174h-64.609v-69.044h64.609l-32.305-55.174 59.914-34.522L480 425.521l32.304-55.739 59.914 34.522-32.305 55.174h64.609v69.044h-64.609l32.305 57.174-59.914 34.522L480 562.479l-32.304 57.739Zm328.478 0-59.348-34.522 32.304-57.174h-64.608v-69.044h64.608l-32.304-55.174 59.348-34.522 32.305 55.739 32.304-55.739 59.913 34.522-32.304 55.174h64.609v69.044h-64.609l32.304 57.174-59.913 34.522-32.304-57.739-32.305 57.739Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- LOGOUT BUTTON -->
+                <div class="col-12 py-3 position-absolute bottom-0">
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M198.87 955.218q-44.305 0-75.154-30.848-30.848-30.848-30.848-75.153V302.783q0-44.305 30.848-75.153 30.849-30.848 75.154-30.848h285.652v106.001H198.87v546.434h285.652v106.001H198.87Zm441.695-152.086-73.653-75.523 98.609-98.608H349.826V522.999h315.695l-98.609-98.608 73.653-75.523L867.132 576 640.565 803.132Z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <main class="col p-2 p-md-4">
+            <div class="col-12 p-3 p-md-5">
+                <div class="d-flex flex-wrap align-items-center">
+                    <div class="col-12 col-md-8 col-lg-4 mx-auto card rounded-4 py-4" style="background-color: #F5F5F5;">
+                        <div id="chart" class="col-12"></div>
+                        <button class="mt-4 py-2 text-primary bg-transparent border-0 text-center col-12"
+                            data-bs-toggle="modal" data-bs-target="#searchCriteria">
+                            <span class="fs-4">&raquo;</span> Election Search Criteria <span class="fs-4">&raquo;</span>
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-lg-7 row mx-auto mt-3 mt-md-0 ml-auto" style="height: fit-content;">
+                        <div class="col-12 col-md-6 p-1 p-md-3">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #ddd;">
+                                <span style="color: #555;">No of Positions</span>
+                                <div class="d-flex justify-content-between align-items-center col-12">
+                                    <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">15</span>
+                                    <div class="ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#777" height="64"
+                                            viewBox="0 96 960 960" width="64">
+                                            <path
+                                                d="M60.782 953.523V847.521h366.217V413.522q-23.739-10.131-41.043-27.717-17.304-17.587-27.435-41.326H253.566l113.217 264.738q0 56.359-44.746 95.81-44.745 39.452-108.043 39.452-63.299 0-108.256-39.452-44.956-39.451-44.956-95.81l113.782-264.738h-73.782V238.477h257.739q14.827-36.13 47.579-58.065 32.752-21.935 73.957-21.935 41.204 0 73.9 21.935 32.695 21.935 47.522 58.065h257.739v106.002h-73.782l113.782 264.738q0 56.359-44.745 95.81-44.746 39.452-108.044 39.452-63.299 0-108.255-39.452-44.957-39.451-44.957-95.81l113.217-264.738H601.479q-10.131 23.739-27.435 41.326-17.304 17.586-41.043 27.717v433.999h366.217v106.002H60.782Zm618.914-350.524h133.043l-66.521-154.216-66.522 154.216Zm-531.87 0h133.043l-67.087-154.216-65.956 154.216Zm332.333-275.478q15.145 0 25.232-10.652t10.087-25.629q0-14.977-10.132-25.109Q495.215 256 480.238 256t-25.347 10.131q-10.369 10.132-10.369 25.109 0 14.977 10.246 25.629 10.245 10.652 25.391 10.652Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1 p-md-3">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #d5d5d5;">
+                                <span style="color: #555;">No of Candidates</span>
+                                <div class="d-flex justify-content-between align-items-center col-12">
+                                    <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">15</span>
+                                    <div class="ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#777" height="64"
+                                            viewBox="0 96 960 960" width="64">
+                                            <path
+                                                d="M22.477 924.828V792.479q0-39.258 20.437-72.166 20.437-32.907 54.303-50.226 63.696-31.566 129.933-47.631 66.238-16.065 134.546-16.065 69.391 0 135.652 15.782 66.261 15.783 128.826 47.348 33.867 17.238 54.303 49.989 20.437 32.751 20.437 72.938v132.38H22.477Zm766.916 0V786.174q0-46.261-23.935-89.587t-70.63-80.805q44.782 7.131 85.26 20.783 40.478 13.652 77.217 32.956 38.261 20 59.239 50.892 20.979 30.892 20.979 67.457v136.958h-148.13ZM361.696 566.391q-70.522 0-120.066-49.544-49.543-49.543-49.543-120.065 0-70.522 49.543-120.066 49.544-49.544 120.066-49.544t120.065 49.544q49.544 49.544 49.544 120.066t-49.544 120.065q-49.543 49.544-120.065 49.544Zm427.697-169.614q0 69.961-49.797 119.788-49.796 49.826-119.723 49.826-11.655 0-28.089-2.783-16.435-2.782-29.696-6.913 28.13-33.13 42.913-74.308 14.783-41.177 14.783-85.522 0-44.344-14.783-85.605t-42.913-74.392q14.565-5.565 28.565-7.63 14-2.066 28.864-2.066 70.074 0 119.975 49.822 49.901 49.821 49.901 119.783ZM128.479 818.826h466.434v-23.521q0-10.451-5.5-19.003-5.5-8.551-14.5-13.301Q524.304 738.262 471 725.327q-53.304-12.935-109.304-12.935-54.87 0-109.305 12.935-54.434 12.935-103.912 37.674-9 4.75-14.5 13.301-5.5 8.552-5.5 19.003v23.521Zm233.127-349.958q29.698 0 50.937-21.149 21.239-21.149 21.239-50.847 0-29.699-21.149-50.938t-50.847-21.239q-29.699 0-50.938 21.149t-21.239 50.848q0 29.698 21.149 50.937 21.149 21.239 50.848 21.239Zm.09 349.958Zm0-422.044Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1 p-md-3">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #d5d5d5;">
+                                <span style="color: #555;">No. of 1993 Set (Registered)</span>
+                                <div class="d-flex justify-content-between align-items-center col-12">
+                                    <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">152</span>
+                                    <div class="ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#777" height="64"
+                                            viewBox="0 96 960 960" width="64">
+                                            <path
+                                                d="M231.521 955.218q-74.478 0-126.848-52.369-52.37-52.37-52.37-126.849 0-74.479 52.37-126.849 52.37-52.369 126.848-52.369 74.479 0 126.566 52.369 52.087 52.37 52.087 126.849 0 74.479-52.087 126.849Q306 955.218 231.521 955.218Zm496.958 0q-74.479 0-126.566-52.369-52.087-52.37-52.087-126.849 0-74.479 52.087-126.849Q654 596.782 728.479 596.782q74.478 0 126.848 52.369 52.37 52.37 52.37 126.849 0 74.479-52.37 126.849-52.37 52.369-126.848 52.369ZM231.501 849.217q30.194 0 51.433-21.502 21.239-21.501 21.239-51.695t-21.341-51.715q-21.342-21.522-51.311-21.522-30.202 0-51.709 21.502-21.508 21.501-21.508 51.695t21.502 51.715q21.502 21.522 51.695 21.522Zm496.978 0q30.202 0 51.709-21.502 21.508-21.501 21.508-51.695t-21.502-51.715q-21.501-21.522-51.695-21.522t-51.433 21.502q-21.239 21.501-21.239 51.695t21.341 51.715q21.342 21.522 51.311 21.522ZM480 537.696q-74.479 0-126.849-52.37-52.369-52.37-52.369-126.849 0-74.478 52.369-126.566 52.37-52.087 126.849-52.087 74.479 0 126.849 52.087 52.369 52.088 52.369 126.566 0 74.479-52.369 126.849-52.37 52.37-126.849 52.37Zm-.02-106.002q30.194 0 51.715-21.501 21.522-21.502 21.522-51.696 0-30.193-21.502-51.432-21.501-21.239-51.695-21.239t-51.715 21.341q-21.522 21.341-21.522 51.31 0 30.202 21.502 51.71 21.501 21.507 51.695 21.507Zm.02-73.217ZM729.044 776Zm-497.523 0Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1 p-md-3">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #ddd;">
+                                <span style="color: #555;">Total Members (Registered)</span>
+                                <div class="d-flex justify-content-between align-items-center col-12">
+                                    <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">945</span>
+                                    <div class="ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#777" height="64"
+                                            viewBox="0 96 960 960" width="64">
+                                            <path
+                                                d="M334.131 736q35.261 0 59.609-24.63 24.348-24.631 24.348-59.892t-24.348-59.609q-24.348-24.348-59.609-24.348t-59.891 24.348q-24.631 24.348-24.631 59.609t24.631 59.892Q298.87 736 334.131 736Zm291.738 0q35.261 0 59.891-24.63 24.631-24.631 24.631-59.892t-24.631-59.609q-24.63-24.348-59.891-24.348-35.261 0-59.609 24.348t-24.348 59.609q0 35.261 24.348 59.892Q590.608 736 625.869 736ZM480 504.479q35.261 0 59.891-24.348 24.631-24.348 24.631-59.609t-24.631-59.892Q515.261 336 480 336q-35.261 0-59.891 24.63-24.631 24.631-24.631 59.892t24.631 59.609q24.63 24.348 59.891 24.348Zm0 490.739q-87.522 0-163.906-32.96-76.385-32.96-132.888-89.464-56.504-56.503-89.464-132.888Q60.782 663.522 60.782 576t32.96-163.906q32.96-76.385 89.464-132.888 56.503-56.504 132.888-89.464 76.384-32.96 163.906-32.96t163.906 32.96q76.385 32.96 132.888 89.464 56.504 56.503 89.464 132.888 32.96 76.384 32.96 163.906t-32.96 163.906q-32.96 76.385-89.464 132.888-56.503 56.504-132.888 89.464-76.384 32.96-163.906 32.96Zm0-106.001q131.739 0 222.478-90.739T793.217 576q0-131.739-90.739-222.478T480 262.783q-131.739 0-222.478 90.739T166.783 576q0 131.739 90.739 222.478T480 889.217ZM480 576Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1 p-md-3">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #ddd;">
+                                <span style="color: #555;">Total Members (Approved)</span>
+                                <div class="d-flex justify-content-between align-items-center col-12">
+                                    <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">849</span>
+                                    <div class="ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#777" height="64"
+                                            viewBox="0 96 960 960" width="64">
+                                            <path
+                                                d="M17.955 933.306v-173q0-39.088 27.457-66.044 27.457-26.957 65.544-26.957h134.392q21.695 0 37.717 8.304t25.891 23.609q30.131 41.826 74.892 64.956 44.761 23.131 96.152 23.131 51.826 0 96.87-23.131 45.043-23.13 74.739-64.956 10.739-15.305 26.543-23.609 15.805-8.304 36.5-8.304h134.957q39.087 0 66.044 26.957 26.957 26.956 26.957 66.044v173H636.609v-96.087q-35 21.609-74.653 33.195-39.652 11.587-81.956 11.587-41.304 0-81.174-11.804-39.869-11.804-74.869-33.413v96.522H17.955ZM480 736q-35.174 0-66.63-16.37-31.457-16.369-52.761-45.108Q340.218 645 311.044 630.5T246.217 616q27.653-35.87 99.218-58.783Q417 534.304 480 534.304t134.848 22.913q71.848 22.913 99.5 58.783-35.218 0-64.609 14.217-29.391 14.218-49.783 44.305-20.304 29.174-52.043 45.326T480 736ZM160 604.695q-52.261 0-88.957-36.696-36.696-36.695-36.696-88.956 0-52.696 36.696-89.174Q107.74 353.39 160 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696Zm640 0q-52.261 0-88.957-36.696-36.695-36.695-36.695-88.956 0-52.696 36.695-89.174Q747.739 353.39 800 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696ZM480 471.694q-52.261 0-88.957-36.695-36.695-36.696-36.695-88.957 0-52.696 36.695-89.174 36.696-36.479 88.957-36.479 52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.957-36.478 36.695-89.174 36.695Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1 p-md-3">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #d5d5d5;">
+                                <span style="color: #555;">Total Members (Voted)</span>
+                                <div class="d-flex justify-content-between align-items-center col-12">
+                                    <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">419</span>
+                                    <div class="ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#777" height="64"
+                                            viewBox="0 96 960 960" width="64">
+                                            <path
+                                                d="M200 993.523q-44.305 0-75.153-30.849-30.848-30.848-30.848-75.153V714l125.827-140.827 75.653 75.653L217.174 736h525.652l-76.87-86.304 75.653-75.653L866.001 714v173.521q0 44.305-30.848 75.153-30.848 30.849-75.153 30.849H200Zm0-106.002h560V816H200v71.521Zm206.347-234.044L277.782 523.782q-30.913-31.478-30.413-75.435.5-43.958 31.413-74.871l184.695-184.695q30.914-30.914 75.088-31.348 44.175-.435 75.088 31.044l128.565 129.13q30.913 31.478 31.065 75.218.152 43.74-30.761 74.653L555.523 654.477q-30.914 30.914-74.588 30.696-43.675-.217-74.588-31.696ZM668.13 392.129 538.435 264.13 352.87 449.694 482 578.259l186.13-186.13ZM200 887.521V816v71.521Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+
+    <!-- SEARCH CRITERIA -->
+    <div class="modal modal-lg fade" id="searchCriteria" tabindex="-1" aria-labelledby="searchCriteriaLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down">
+            <div class="modal-content" style="background-color: #E5E5E5;">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="searchCriteriaLabel">Election Search Criteria</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <select name="year_graduated" id="year_graduated" class="form-select">
+                            <option value="">All Set</option>
+
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                        </select><br>
+                        <select name="position" id="position" class="form-select">
+                            <option selected="" value="">All Position</option>
+                            <option value="8">The National President</option>
+                            <option value="9">The Vice President (Nigeria and Africa)</option>
+                            <option value="10">The Vice President (Europe)</option>
+                            <option value="11">The Vice President (America - North and South)</option>
+                            <option value="12">The Vice President (Rest of the World)</option>
+                            <option value="13">The General Secretary</option>
+                            <option value="14">The General Secretary (Assistant)</option>
+                            <option value="15">The Financial Director</option>
+                            <option value="16">The Treasurer</option>
+                            <option value="17">The Public Relations Director I</option>
+                            <option value="18">The Public Relations Director (Assistant)</option>
+                            <option value="19">The Social Director</option>
+                            <option value="20">The Welfare Director</option>
+                            <option value="21">The Chief Whip I</option>
+                            <option value="22">The Chief Whip II</option>
+                        </select><br>
+                        <select name="candidate" id="candidate" class="form-select">
+                            <option selected="" value="">All Candidate</option>
+                            <option value="2">Olusegun afolabi Alabi</option>
+                            <option value="3">Ayodeji Ogundoro </option>
+                            <option value="4">OLUWAROTIMI AMU</option>
+                            <option value="5">Ifeoma Ebele Okerulu( Nee ENEKWIZU)</option>
+                            <option value="6">Adeoye mulikat olayinka Onilenla </option>
+                            <option value="7">Akinwale Akingbade</option>
+                            <option value="8">WASIU OLUWOLE IBRAHIM</option>
+                            <option value="9">Adedolapo Adetutu Efoguah </option>
+                            <option value="10">Tinuade FAMUYIWA</option>
+                            <option value="11">Iskilu Ojo Yekini</option>
+                            <option value="12">Olusegun Akinniran </option>
+                            <option value="13">OLUFUNKE ANTHONIA OLASUNKANMI ODEJOBI </option>
+                            <option value="14">Taiwo Mayowa Ibrahim </option>
+                            <option value="15">Oluremilekun Titilayo Afunmiso </option>
+                            <option value="16">Olufunmilayo Enitan Adeworan </option>
+                        </select>
+                        <div class="py-5 text-center">
+                            <button type="button" class="btn btn-primary px-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" height="24" viewBox="0 96 960 960"
+                                    width="24">
+                                    <path
+                                        d="M782.87 957.479 526.913 701.523q-29.435 21.739-68.152 34.608-38.718 12.87-83.283 12.87-114.087 0-193.544-79.457Q102.477 590.087 102.477 476q0-114.087 79.457-193.544 79.457-79.457 193.544-79.457 114.087 0 193.544 79.457Q648.479 361.913 648.479 476q0 45.13-12.87 83.283-12.869 38.152-34.608 67.021l256.522 257.087-74.653 74.088Zm-407.392-314.48q69.913 0 118.456-48.543Q542.477 545.913 542.477 476q0-69.913-48.543-118.456-48.543-48.543-118.456-48.543-69.913 0-118.456 48.543Q208.479 406.087 208.479 476q0 69.913 48.543 118.456 48.543 48.543 118.456 48.543Z" />
+                                </svg>
+                                <span>Search</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- OFFCANVAS NAV -->
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-3 position-relative overflow-x-hidden">
+            <!-- LINKS -->
+            <div class="list-group col-12 text-center">
+                <a href="/" class="col text-start px-3 btn btn-primary active px-0 rounded py-2 mb-3"
+                    aria-current="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#EEEEEE" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M515.478 448.087V182.085h358.437v266.002H515.478ZM86.085 630.696V182.085h358.437v448.611H86.085Zm429.393 337.523V519.608h358.437v448.611H515.478Zm-429.393 0V702.218h358.437v266.001H86.085Zm106.002-443.524h146.434V288.087H192.087v236.608Zm429.392 337.523h146.434V625.609H621.479v236.609Zm0-520.133h146.434v-53.998H621.479v53.998ZM192.087 862.218h146.434v-53.999H192.087v53.999Zm146.434-337.523Zm282.958-182.61Zm0 283.524Zm-282.958 182.61Z" />
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="col text-start px-3 btn btn-dark border-0 rounded bg-dark px-0 py-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M200 993.523q-44.305 0-75.153-30.849-30.848-30.848-30.848-75.153V714l125.827-140.827 75.653 75.653L217.174 736h525.652l-76.87-86.304 75.653-75.653L866.001 714v173.521q0 44.305-30.848 75.153-30.848 30.849-75.153 30.849H200Zm0-106.002h560V816H200v71.521Zm206.347-234.044L277.782 523.782q-30.913-31.478-30.413-75.435.5-43.958 31.413-74.871l184.695-184.695q30.914-30.914 75.088-31.348 44.175-.435 75.088 31.044l128.565 129.13q30.913 31.478 31.065 75.218.152 43.74-30.761 74.653L555.523 654.477q-30.914 30.914-74.588 30.696-43.675-.217-74.588-31.696ZM668.13 392.129 538.435 264.13 352.87 449.694 482 578.259l186.13-186.13ZM200 887.521V816v71.521Z" />
+                    </svg>
+                    <span>Votes</span>
+                </a>
+                <a href="./pages/members.html" class="col text-start px-3 btn btn-dark border-0 rounded bg-dark px-0 py-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M17.955 933.306v-173q0-39.088 27.457-66.044 27.457-26.957 65.544-26.957h134.392q21.695 0 37.717 8.304t25.891 23.609q30.131 41.826 74.892 64.956 44.761 23.131 96.152 23.131 51.826 0 96.87-23.131 45.043-23.13 74.739-64.956 10.739-15.305 26.543-23.609 15.805-8.304 36.5-8.304h134.957q39.087 0 66.044 26.957 26.957 26.956 26.957 66.044v173H636.609v-96.087q-35 21.609-74.653 33.195-39.652 11.587-81.956 11.587-41.304 0-81.174-11.804-39.869-11.804-74.869-33.413v96.522H17.955ZM480 736q-35.174 0-66.63-16.37-31.457-16.369-52.761-45.108Q340.218 645 311.044 630.5T246.217 616q27.653-35.87 99.218-58.783Q417 534.304 480 534.304t134.848 22.913q71.848 22.913 99.5 58.783-35.218 0-64.609 14.217-29.391 14.218-49.783 44.305-20.304 29.174-52.043 45.326T480 736ZM160 604.695q-52.261 0-88.957-36.696-36.696-36.695-36.696-88.956 0-52.696 36.696-89.174Q107.74 353.39 160 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696Zm640 0q-52.261 0-88.957-36.696-36.695-36.695-36.695-88.956 0-52.696 36.695-89.174Q747.739 353.39 800 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696ZM480 471.694q-52.261 0-88.957-36.695-36.695-36.696-36.695-88.957 0-52.696 36.695-89.174 36.696-36.479 88.957-36.479 52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.957-36.478 36.695-89.174 36.695Z" />
+                    </svg>
+                    <span>Members</span>
+                </a>
+                <a href="#" class="col text-start px-3 btn btn-dark border-0 rounded bg-dark px-0 py-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M67 869.001V762.999H893v106.002H66.999Zm52.217-248.783-59.913-34.522 32.304-57.174H26.999v-69.044h64.609l-32.304-55.174 59.913-34.522 32.304 55.739 32.305-55.739 59.348 34.522-32.304 55.174h64.608v69.044H210.87l32.304 57.174-59.348 34.522-32.305-57.739-32.304 57.739Zm328.479 0-59.914-34.522 32.305-57.174h-64.609v-69.044h64.609l-32.305-55.174 59.914-34.522L480 425.521l32.304-55.739 59.914 34.522-32.305 55.174h64.609v69.044h-64.609l32.305 57.174-59.914 34.522L480 562.479l-32.304 57.739Zm328.478 0-59.348-34.522 32.304-57.174h-64.608v-69.044h64.608l-32.304-55.174 59.348-34.522 32.305 55.739 32.304-55.739 59.913 34.522-32.304 55.174h64.609v69.044h-64.609l32.304 57.174-59.913 34.522-32.304-57.739-32.305 57.739Z" />
+                    </svg>
+                    <span>Change Password</span>
+                </a>
+            </div>
+
+            <!-- LOGOUT BUTTON -->
+            <div class="col-12 py-3 position-absolute bottom-0">
+                <button class="col text-start px-3 btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M198.87 955.218q-44.305 0-75.154-30.848-30.848-30.848-30.848-75.153V302.783q0-44.305 30.848-75.153 30.849-30.848 75.154-30.848h285.652v106.001H198.87v546.434h285.652v106.001H198.87Zm441.695-152.086-73.653-75.523 98.609-98.608H349.826V522.999h315.695l-98.609-98.608 73.653-75.523L867.132 576 640.565 803.132Z" />
+                    </svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

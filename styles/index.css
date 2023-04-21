@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+*::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.content-wrapper {
+    background-color: #E5E5E5;
+    min-height: 100vh;
+}
+
+.sidenavbar{
+    width: 50px;
+    height: 100vh;
+}
+
+.member-card {
+    background-color: #F5F5F5;
+}
+
+.side_details{
+    position: sticky;
+    top: 0;
+}
+@media screen and (max-width: 767px) {
+    .side_details{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: .2s;
+        z-index: 1500;
+    }
+    .side_details.active{
+        right: 0;
+    }
+}

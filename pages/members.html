@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMHOSA Alumni - Members Portal</title>
+
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+
+    <script src="../scripts/apexcharts.js"></script>
+</head>
+
+<body>
+    <div class="col-12 d-flex content-wrapper">
+        <section class="sidenavbar bg-dark text-center sticky-top">
+
+            <div class="position-relative d-flex flex-wrap align-items-center" style="height: 100vh;">
+
+                <!-- MENU BUTTON -->
+                <div class="col-12 py-3 position-absolute top-0">
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1V2C16 2.55228 15.5523 3 15 3H1C0.447715 3 0 2.55228 0 2V1ZM0 7C0 6.44772 0.447715 6 1 6H15C15.5523 6 16 6.44772 16 7V8C16 8.55229 15.5523 9 15 9H1C0.447715 9 0 8.55228 0 8V7ZM1 12C0.447715 12 0 12.4477 0 13V14C0 14.5523 0.447715 15 1 15H15C15.5523 15 16 14.5523 16 14V13C16 12.4477 15.5523 12 15 12H1Z"
+                                fill="#FFFFFF" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- LINKS -->
+                <div class="list-group col-12 px-1 text-center" style="margin-top: -50px;">
+                    <a href="/" class="list-group-item list-group-item-action border-0 rounded bg-dark px-0 py-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M515.478 448.087V182.085h358.437v266.002H515.478ZM86.085 630.696V182.085h358.437v448.611H86.085Zm429.393 337.523V519.608h358.437v448.611H515.478Zm-429.393 0V702.218h358.437v266.001H86.085Zm106.002-443.524h146.434V288.087H192.087v236.608Zm429.392 337.523h146.434V625.609H621.479v236.609Zm0-520.133h146.434v-53.998H621.479v53.998ZM192.087 862.218h146.434v-53.999H192.087v53.999Zm146.434-337.523Zm282.958-182.61Zm0 283.524Zm-282.958 182.61Z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded bg-dark px-0 py-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M200 993.523q-44.305 0-75.153-30.849-30.848-30.848-30.848-75.153V714l125.827-140.827 75.653 75.653L217.174 736h525.652l-76.87-86.304 75.653-75.653L866.001 714v173.521q0 44.305-30.848 75.153-30.848 30.849-75.153 30.849H200Zm0-106.002h560V816H200v71.521Zm206.347-234.044L277.782 523.782q-30.913-31.478-30.413-75.435.5-43.958 31.413-74.871l184.695-184.695q30.914-30.914 75.088-31.348 44.175-.435 75.088 31.044l128.565 129.13q30.913 31.478 31.065 75.218.152 43.74-30.761 74.653L555.523 654.477q-30.914 30.914-74.588 30.696-43.675-.217-74.588-31.696ZM668.13 392.129 538.435 264.13 352.87 449.694 482 578.259l186.13-186.13ZM200 887.521V816v71.521Z" />
+                        </svg>
+                    </a>
+                    <a href="/pages/members.html"
+                        class="list-group-item list-group-item-action active px-0 rounded py-2 mb-3"
+                        aria-current="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#EEEEEE" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M17.955 933.306v-173q0-39.088 27.457-66.044 27.457-26.957 65.544-26.957h134.392q21.695 0 37.717 8.304t25.891 23.609q30.131 41.826 74.892 64.956 44.761 23.131 96.152 23.131 51.826 0 96.87-23.131 45.043-23.13 74.739-64.956 10.739-15.305 26.543-23.609 15.805-8.304 36.5-8.304h134.957q39.087 0 66.044 26.957 26.957 26.956 26.957 66.044v173H636.609v-96.087q-35 21.609-74.653 33.195-39.652 11.587-81.956 11.587-41.304 0-81.174-11.804-39.869-11.804-74.869-33.413v96.522H17.955ZM480 736q-35.174 0-66.63-16.37-31.457-16.369-52.761-45.108Q340.218 645 311.044 630.5T246.217 616q27.653-35.87 99.218-58.783Q417 534.304 480 534.304t134.848 22.913q71.848 22.913 99.5 58.783-35.218 0-64.609 14.217-29.391 14.218-49.783 44.305-20.304 29.174-52.043 45.326T480 736ZM160 604.695q-52.261 0-88.957-36.696-36.696-36.695-36.696-88.956 0-52.696 36.696-89.174Q107.74 353.39 160 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696Zm640 0q-52.261 0-88.957-36.696-36.695-36.695-36.695-88.956 0-52.696 36.695-89.174Q747.739 353.39 800 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696ZM480 471.694q-52.261 0-88.957-36.695-36.695-36.696-36.695-88.957 0-52.696 36.695-89.174 36.696-36.479 88.957-36.479 52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.957-36.478 36.695-89.174 36.695Z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded bg-dark px-0 py-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M67 869.001V762.999H893v106.002H66.999Zm52.217-248.783-59.913-34.522 32.304-57.174H26.999v-69.044h64.609l-32.304-55.174 59.913-34.522 32.304 55.739 32.305-55.739 59.348 34.522-32.304 55.174h64.608v69.044H210.87l32.304 57.174-59.348 34.522-32.305-57.739-32.304 57.739Zm328.479 0-59.914-34.522 32.305-57.174h-64.609v-69.044h64.609l-32.305-55.174 59.914-34.522L480 425.521l32.304-55.739 59.914 34.522-32.305 55.174h64.609v69.044h-64.609l32.305 57.174-59.914 34.522L480 562.479l-32.304 57.739Zm328.478 0-59.348-34.522 32.304-57.174h-64.608v-69.044h64.608l-32.304-55.174 59.348-34.522 32.305 55.739 32.304-55.739 59.913 34.522-32.304 55.174h64.609v69.044h-64.609l32.304 57.174-59.913 34.522-32.304-57.739-32.305 57.739Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- LOGOUT BUTTON -->
+                <div class="col-12 py-3 position-absolute bottom-0">
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                            width="24">
+                            <path
+                                d="M198.87 955.218q-44.305 0-75.154-30.848-30.848-30.848-30.848-75.153V302.783q0-44.305 30.848-75.153 30.849-30.848 75.154-30.848h285.652v106.001H198.87v546.434h285.652v106.001H198.87Zm441.695-152.086-73.653-75.523 98.609-98.608H349.826V522.999h315.695l-98.609-98.608 73.653-75.523L867.132 576 640.565 803.132Z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <main class="col overflow-x-hidden">
+            <div class="d-flex overflow-x-hidden col-12">
+
+                <div class="col-12 col-md-6 p-2 p-md-3 mx-1 mx-md-0" style="max-height: 100vh; overflow-y: scroll; position: relative;">
+                    <div class="col-12 sticky-top" style="background-color: #E5E5E5;">
+                        <div class="col-lg-10 mx-auto d-flex align-items-center">
+                            <h5>Members</h5>
+                            <button class="btn ms-auto px-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="48">
+                                    <path
+                                        d="M440.463 925.999V716.77h45.383V799h344.153v45.384H485.846v81.615h-45.383Zm-310.462-81.615V799h225.075v45.384H130.001Zm179.692-164.077v-81.615H130.001v-45.384h179.692v-82.846h45.383v209.845h-45.383Zm130.77-81.615v-45.384h389.536v45.384H440.463Zm164.461-163.846V226.001h45.383v81.615h179.692V353H650.307v81.846h-45.383ZM130.001 353v-45.384h389.536V353H130.001Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-10 mx-auto mt-4 mb-5" id="members-list">
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-2 p-md-4 overflow-auto side_details"
+                    style="height: 100vh; background-color: #EEEEEE;">
+                    <!-- PROFILE INFO -->
+                    <div class="fw-semibold fs-5 text-dark px-2"><span class="back btn fs-1 d-inline d-md-none" style="margin-top: -5px;">&leftarrow;</span> Profile Information</div><br>
+                    <div class="bg-secondary rounded-pill d-flex justify-content-center align-items-center mx-auto mb-4"
+                        style="width: 100px; height: 100px;">
+                        <span class="fs-4 fw-semibold text-info" id="initials">DP</span>
+                    </div>
+                    <div class="col-12 row row-cols-1 row-cols-md-2 row-cols-lg-3 px-0 mx-0">
+                        <div class="col p-2">
+                            <div class="col-12 card py-2 px-3 rounded-3 border-0 bg-white">
+                                <small class="text-secondary fw-semibold">First Name</small>
+                                <span class="text-dark" id="firstname">null</span>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="col-12 card py-2 px-3 rounded-3 border-0 bg-white">
+                                <small class="text-secondary fw-semibold">Last Name</small>
+                                <span class="text-dark" id="lastname">null</span>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="col-12 card py-2 px-3 rounded-3 border-0 bg-white">
+                                <small class="text-secondary fw-semibold">Middle Name</small>
+                                <span class="text-dark" id="middlename">null</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT INFO -->
+                    <div class="fw-semibold fs-5 text-dark mt-5 px-2">Contact Information</div>
+                    <div class="col-12 row row-cols-1 row-cols-lg-2 mt-1 mx-0 px-0">
+                        <div class="col p-2">
+                            <div class="col-12 card py-2 px-3 rounded-3 border-0 bg-white">
+                                <small class="text-secondary fw-semibold">Email Address</small>
+                                <span class="text-dark" id="email">null</span>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="col-12 card py-2 px-3 rounded-3 border-0 bg-white">
+                                <small class="text-secondary fw-semibold">Phone Number</small>
+                                <span class="text-dark" id="phone">null</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OTHER INFO -->
+                    <div class="fw-semibold fs-5 text-dark mt-5 px-2">Other</div>
+                    <div class="col-12 row row-cols-1 row-cols-lg-2 mt-1 mx-0 px-0">
+                        <div class="col p-2">
+                            <div class="col-12 card py-2 px-3 rounded-3 border-0 bg-white">
+                                <small class="text-secondary fw-semibold">Status</small>
+                                <span class="text-dark" id="status">null</span>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <button class="col-12 btn py-2 px-3 rounded-3 border-0 bg-white text-start">
+                                <small class="text-secondary fw-semibold">Change Password</small><br>
+                                <span class="text-dark">******</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+
+    <!-- OFFCANVAS NAV -->
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-3 position-relative overflow-x-hidden">
+            <!-- LINKS -->
+            <div class="list-group col-12 text-center">
+                <a href="/" class="col text-start px-3 btn btn-dark px-0 rounded py-2 mb-3" aria-current="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#EEEEEE" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M515.478 448.087V182.085h358.437v266.002H515.478ZM86.085 630.696V182.085h358.437v448.611H86.085Zm429.393 337.523V519.608h358.437v448.611H515.478Zm-429.393 0V702.218h358.437v266.001H86.085Zm106.002-443.524h146.434V288.087H192.087v236.608Zm429.392 337.523h146.434V625.609H621.479v236.609Zm0-520.133h146.434v-53.998H621.479v53.998ZM192.087 862.218h146.434v-53.999H192.087v53.999Zm146.434-337.523Zm282.958-182.61Zm0 283.524Zm-282.958 182.61Z" />
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="col text-start px-3 btn btn-dark border-0 rounded px-0 py-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M200 993.523q-44.305 0-75.153-30.849-30.848-30.848-30.848-75.153V714l125.827-140.827 75.653 75.653L217.174 736h525.652l-76.87-86.304 75.653-75.653L866.001 714v173.521q0 44.305-30.848 75.153-30.848 30.849-75.153 30.849H200Zm0-106.002h560V816H200v71.521Zm206.347-234.044L277.782 523.782q-30.913-31.478-30.413-75.435.5-43.958 31.413-74.871l184.695-184.695q30.914-30.914 75.088-31.348 44.175-.435 75.088 31.044l128.565 129.13q30.913 31.478 31.065 75.218.152 43.74-30.761 74.653L555.523 654.477q-30.914 30.914-74.588 30.696-43.675-.217-74.588-31.696ZM668.13 392.129 538.435 264.13 352.87 449.694 482 578.259l186.13-186.13ZM200 887.521V816v71.521Z" />
+                    </svg>
+                    <span>Votes</span>
+                </a>
+                <a href="/pages/members.html"
+                    class="col text-start px-3 btn btn-primary active border-0 rounded px-0 py-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M17.955 933.306v-173q0-39.088 27.457-66.044 27.457-26.957 65.544-26.957h134.392q21.695 0 37.717 8.304t25.891 23.609q30.131 41.826 74.892 64.956 44.761 23.131 96.152 23.131 51.826 0 96.87-23.131 45.043-23.13 74.739-64.956 10.739-15.305 26.543-23.609 15.805-8.304 36.5-8.304h134.957q39.087 0 66.044 26.957 26.957 26.956 26.957 66.044v173H636.609v-96.087q-35 21.609-74.653 33.195-39.652 11.587-81.956 11.587-41.304 0-81.174-11.804-39.869-11.804-74.869-33.413v96.522H17.955ZM480 736q-35.174 0-66.63-16.37-31.457-16.369-52.761-45.108Q340.218 645 311.044 630.5T246.217 616q27.653-35.87 99.218-58.783Q417 534.304 480 534.304t134.848 22.913q71.848 22.913 99.5 58.783-35.218 0-64.609 14.217-29.391 14.218-49.783 44.305-20.304 29.174-52.043 45.326T480 736ZM160 604.695q-52.261 0-88.957-36.696-36.696-36.695-36.696-88.956 0-52.696 36.696-89.174Q107.74 353.39 160 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696Zm640 0q-52.261 0-88.957-36.696-36.695-36.695-36.695-88.956 0-52.696 36.695-89.174Q747.739 353.39 800 353.39q52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.956-36.478 36.696-89.174 36.696ZM480 471.694q-52.261 0-88.957-36.695-36.695-36.696-36.695-88.957 0-52.696 36.695-89.174 36.696-36.479 88.957-36.479 52.696 0 89.174 36.479 36.478 36.478 36.478 89.174 0 52.261-36.478 88.957-36.478 36.695-89.174 36.695Z" />
+                    </svg>
+                    <span>Members</span>
+                </a>
+                <a href="#" class="col text-start px-3 btn btn-dark border-0 rounded px-0 py-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M67 869.001V762.999H893v106.002H66.999Zm52.217-248.783-59.913-34.522 32.304-57.174H26.999v-69.044h64.609l-32.304-55.174 59.913-34.522 32.304 55.739 32.305-55.739 59.348 34.522-32.304 55.174h64.608v69.044H210.87l32.304 57.174-59.348 34.522-32.305-57.739-32.304 57.739Zm328.479 0-59.914-34.522 32.305-57.174h-64.609v-69.044h64.609l-32.305-55.174 59.914-34.522L480 425.521l32.304-55.739 59.914 34.522-32.305 55.174h64.609v69.044h-64.609l32.305 57.174-59.914 34.522L480 562.479l-32.304 57.739Zm328.478 0-59.348-34.522 32.304-57.174h-64.608v-69.044h64.608l-32.304-55.174 59.348-34.522 32.305 55.739 32.304-55.739 59.913 34.522-32.304 55.174h64.609v69.044h-64.609l32.304 57.174-59.913 34.522-32.304-57.739-32.305 57.739Z" />
+                    </svg>
+                    <span>Change Password</span>
+                </a>
+            </div>
+
+            <!-- LOGOUT BUTTON -->
+            <div class="col-12 py-3 position-absolute bottom-0">
+                <button class="col text-start px-3 btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#C8C8C8" height="24" viewBox="0 96 960 960"
+                        width="24">
+                        <path
+                            d="M198.87 955.218q-44.305 0-75.154-30.848-30.848-30.848-30.848-75.153V302.783q0-44.305 30.848-75.153 30.849-30.848 75.154-30.848h285.652v106.001H198.87v546.434h285.652v106.001H198.87Zm441.695-152.086-73.653-75.523 98.609-98.608H349.826V522.999h315.695l-98.609-98.608 73.653-75.523L867.132 576 640.565 803.132Z" />
+                    </svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/members.js"></script>
+</body>
+
+</html>

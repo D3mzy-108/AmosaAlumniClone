@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name": {
+                "first": "Olusola",
+                "last": "Ogunye",
+                "middle": "David"
+            },
+            "email": "solaogunye@yahoo.com",
+            "phone": "+2348056254334",
+            "verified": true,
+            "password": "@123456"
+        },
+        {
+            "id": 2,
+            "name": {
+                "first": "Ademola",
+                "last": "Odejide",
+                "middle": "Jimmy"
+            },
+            "email": "jimny_libeery@yahoo.com",
+            "phone": "+2348028129377",
+            "verified": false,
+            "password": "@123456"
+        },
+        {
+            "id": 3,
+            "name": {
+                "first": "Olasunkanmi",
+                "last": "Oshikoya",
+                "middle": "Joshua"
+            },
+            "email": "oshikoyasunkanmi@gmail.com",
+            "phone": "+2348036662475",
+            "verified": false,
+            "password": "@123456"
+        },
+        {
+            "id": 4,
+            "name": {
+                "first": "Titilayo",
+                "last": "Fasipe",
+                "middle": "Modupe"
+            },
+            "email": "titilayofasipe@gmail.com",
+            "phone": "+2348134459455",
+            "verified": true,
+            "password": "@123456"
+        },
+        {
+            "id": 5,
+            "name": {
+                "first": "Risikat",
+                "last": "Oyewumi",
+                "middle": "Morenike"
+            },
+            "email": "morenikeoyewumi52@gmail.com",
+            "phone": "+2348034867810",
+            "verified": true,
+            "password": "@123456"
+        },
+        {
+            "id": 6,
+            "name": {
+                "first": "Olusegun",
+                "last": "Oduneye",
+                "middle": "Obasanjo"
+            },
+            "email": "segunbenson1@yahoo.com",
+            "phone": "+2348033316876",
+            "verified": false,
+            "password": "@123456"
+        }
+    ]
+}
