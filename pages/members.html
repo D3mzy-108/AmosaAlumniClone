@@ -82,10 +82,52 @@
         </section>
 
         <main class="col overflow-x-hidden">
+            <!-- MAIN CONTENT -->
             <div class="d-flex overflow-x-hidden col-12">
 
-                <div class="col-12 col-md-6 col-lg-7 p-2 p-md-3 mx-1 mx-md-0" style="max-height: 100vh; overflow-y: scroll; position: relative;">
-                    <div class="col-12 sticky-top" style="background-color: #E5E5E5;">
+                <!-- USER LIST -->
+                <div class="col-12 col-md-6 col-lg-7"
+                    style="max-height: 100vh; overflow-y: scroll; position: relative;">
+                    <!-- HEADER -->
+                    <header class="col-12 py-3 px-4 d-flex align-items-center bg-secondary"
+                        style="position: sticky; top: 0; z-index: 1000;">
+                        <img src="/images/logo.png" alt="" width="35px" height="35px">
+
+                        <div class="dropdown ms-auto">
+                            <img src="/images/ic_user.svg" alt="" width="35px" height="35px"
+                                class="dropdown-toggle btn btn-light rounded-pill p-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <ul class="dropdown-menu py-0 overflow-hidden border-0 shadow" style="min-width: 280px;">
+                                <li class="dropdown-item p-3 d-flex align-items-center"
+                                    style="background-color: #F5F5F5;">
+                                    <img src="/images/ic_user.svg" alt="" width="60px" height="60px"
+                                        class="dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+
+                                    <div class="ms-2">
+                                        <span class="fw-semibold text-dark">Firstname Lastname</span><br>
+                                        <small class="text-secondary">email@gmail.com</small>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-item" href="#">My Activity</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <div class="col-12 p-2 p-md-0 mt-4 mx-1 mx-md-0" style="background-color: #E5E5E5;">
                         <div class="col-lg-10 mx-auto d-flex align-items-center">
                             <h5>Members</h5>
                             <button class="btn ms-auto px-0">
@@ -97,15 +139,17 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-10 mx-auto mt-4 mb-5" id="members-list">
+                    <div class="col-12 col-lg-10 mb-3 p-2 p-md-3 mx-1 mx-md-auto" id="members-list">
 
                     </div>
                 </div>
 
+                <!-- USER DETAILS SECTION -->
                 <div class="col-12 col-md-6 col-lg-5 p-2 p-md-4 overflow-auto side_details"
                     style="height: 100vh; background-color: #EEEEEE;">
                     <!-- PROFILE INFO -->
-                    <div class="fw-semibold fs-5 text-dark px-2"><span class="back btn fs-1 d-inline d-md-none" style="margin-top: -5px;">&leftarrow;</span> Profile Information</div><br>
+                    <div class="fw-semibold fs-5 text-dark px-2"><span class="back btn fs-1 d-inline d-md-none"
+                            style="margin-top: -5px;">&leftarrow;</span> Profile Information</div><br>
                     <div class="bg-secondary rounded-pill d-flex justify-content-center align-items-center mx-auto mb-4"
                         style="width: 100px; height: 100px;">
                         <span class="fs-4 fw-semibold text-info" id="initials">DP</span>
