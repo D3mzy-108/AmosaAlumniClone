@@ -32,14 +32,13 @@ async function getMembers() {
         document.getElementById('members-list').appendChild(card)
     })
 
-    var selected = members.find(info => info.id == 1)
-    document.getElementById('initials').textContent = selected.name.first.charAt(0) + selected.name.last.charAt(0)
-    document.getElementById('firstname').textContent = selected.name.first
-    document.getElementById('lastname').textContent = selected.name.last
-    document.getElementById('middlename').textContent = selected.name.middle
-    document.getElementById('email').textContent = selected.email
-    document.getElementById('phone').textContent = selected.phone
-    document.getElementById('status').textContent = selected.verified ? 'Verified' : 'Awaiting Verification'
+    document.getElementById('initials').textContent = ""
+    document.getElementById('firstname').textContent = "..."
+    document.getElementById('lastname').textContent = "..."
+    document.getElementById('middlename').textContent = "..."
+    document.getElementById('email').textContent = "..."
+    document.getElementById('phone').textContent = "..."
+    document.getElementById('status').textContent = "..."
 
     // VIEW DETAILS
     var view_btns = document.querySelectorAll(".view")
