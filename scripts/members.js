@@ -48,7 +48,7 @@ async function getMembers() {
         btn.addEventListener('click', () => {
 
             // Toggle Side Details
-            if (window.screen.width < 767) {
+            if (window.screen.width < 993) {
                 document.querySelector(".side_details").classList.add('active')
 
                 document.querySelector('.back').addEventListener('click', () => {

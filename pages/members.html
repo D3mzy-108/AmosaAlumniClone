@@ -86,7 +86,7 @@
             <div class="d-flex overflow-x-hidden col-12">
 
                 <!-- USER LIST -->
-                <div class="col-12 col-md-6 col-lg-7"
+                <div class="col-12 col-lg-7"
                     style="max-height: 100vh; overflow-y: scroll; position: relative;">
                     <!-- HEADER -->
                     <header class="col-12 py-3 px-4 d-flex align-items-center bg-secondary"
@@ -98,7 +98,8 @@
                                 class="dropdown-toggle btn btn-light rounded-pill p-0" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
 
-                            <ul class="dropdown-menu py-0 overflow-hidden border-0 shadow" style="min-width: 280px;">
+                            <ul class="dropdown-menu py-0 pb-3 overflow-hidden border-0 shadow"
+                                style="min-width: 280px;">
                                 <li class="dropdown-item p-3 d-flex align-items-center"
                                     style="background-color: #F5F5F5;">
                                     <img src="/images/ic_user.svg" alt="" width="60px" height="60px"
@@ -128,7 +129,7 @@
                     </header>
 
                     <div class="col-12 p-2 p-md-0 mt-4 mx-1 mx-md-0" style="background-color: #E5E5E5;">
-                        <div class="col-lg-10 mx-auto d-flex align-items-center">
+                        <div class="col-md-11 col-lg-10 mx-auto d-flex align-items-center">
                             <h5>Members</h5>
                             <button class="btn ms-auto px-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="48">
@@ -139,16 +140,85 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-10 mb-3 p-2 p-md-3 mx-1 mx-md-auto" id="members-list">
+                    <!-- MEMBERS LIST -->
+                    <div class="col-12 col-md-11 col-lg-10 mb-3 p-2 p-md-3 mx-1 mx-md-auto" id="members-list"></div>
 
-                    </div>
+                    <!-- FOOTER -->
+                    <footer class="col-12 py-4 py-md-5 px-3 px-md-5" style="background-color: #F5F5F5;">
+                        <div class="row">
+                            <div class="col-lg-4 mb-md-0 mb-4">
+                                <h2 class="footer-heading">About us</h2>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.
+                                </p>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 col-lg-9">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-md-0 mb-4">
+                                                <h2 class="footer-heading">V<u>o</u>tes</h2>
+                                                <ul class="px-3">
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Candidates</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Positions</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Help
+                                                            &amp; Support</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 mb-md-0 mb-4">
+                                                <h2 class="footer-heading">Ab<u>o</u>ut</h2>
+                                                <ul class="px-3">
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Admins</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Staff</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Members</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 mb-md-0 mb-4">
+                                                <h2 class="footer-heading">Res<u>o</u>urces</h2>
+                                                <ul class="px-3">
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Security</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Charts</a>
+                                                    </li>
+                                                    <li><a href="#"
+                                                            class="py-1 d-block text-dark text-decoration-none">Privacy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-md-5">
+                            <div class="col-md-12">
+                                <p class="copyright">
+                                    Copyright ©
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved
+                                </p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
 
                 <!-- USER DETAILS SECTION -->
-                <div class="col-12 col-md-6 col-lg-5 p-2 p-md-4 overflow-auto side_details"
+                <div class="col-12 col-lg-5 p-2 p-md-4 overflow-auto side_details"
                     style="height: 100vh; background-color: #EEEEEE;">
                     <!-- PROFILE INFO -->
-                    <div class="fw-semibold fs-5 text-dark px-2"><span class="back btn fs-1 d-inline d-md-none"
+                    <div class="fw-semibold fs-5 text-dark px-2"><span class="back btn fs-1 d-inline d-lg-none"
                             style="margin-top: -5px;">&leftarrow;</span> Profile Information</div><br>
                     <div class="bg-secondary rounded-pill d-flex justify-content-center align-items-center mx-auto mb-4"
                         style="width: 100px; height: 100px;">

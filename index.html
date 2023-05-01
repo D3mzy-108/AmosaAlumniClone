@@ -82,7 +82,8 @@
 
         <main class="col">
             <!-- HEADER -->
-            <header class="col-12 py-3 px-4 bg-secondary d-flex align-items-center">
+            <header class="col-12 py-3 px-4 d-flex align-items-center bg-secondary"
+                style="position: sticky; top: 0; z-index: 1000;">
                 <img src="/images/logo.png" alt="" width="35px" height="35px">
 
                 <div class="dropdown ms-auto">
@@ -90,7 +91,7 @@
                         class="dropdown-toggle btn btn-light rounded-pill p-0" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
 
-                    <ul class="dropdown-menu py-0 overflow-hidden border-0 shadow" style="min-width: 280px;">
+                    <ul class="dropdown-menu py-0 pb-3 overflow-hidden border-0 shadow" style="min-width: 280px;">
                         <li class="dropdown-item p-3 d-flex align-items-center" style="background-color: #F5F5F5;">
                             <img src="/images/ic_user.svg" alt="" width="60px" height="60px"
                                 class="dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown"
@@ -121,7 +122,7 @@
             <!-- MAIN CONTENT -->
             <div class="col-12 p-3 p-md-5">
                 <div class="d-flex flex-wrap align-items-center">
-                    <div class="col-12 col-md-8 col-lg-4 mx-auto card rounded-4 py-4"
+                    <div class="col-12 col-md-8 col-lg-4 mx-auto card rounded-4 py-4 border-0"
                         style="background-color: #F5F5F5;">
                         <div id="chart" class="col-12"></div>
                         <button class="mt-4 py-2 text-primary bg-transparent border-0 text-center col-12"
@@ -132,7 +133,7 @@
 
                     <div class="col-12 col-lg-7 row mx-auto mt-3 mt-md-0 ml-auto" style="height: fit-content;">
                         <div class="col-12 col-md-6 p-1 p-md-3">
-                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #ddd;">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #F5F5F5;">
                                 <span style="color: #555;">No of Positions</span>
                                 <div class="d-flex justify-content-between align-items-center col-12">
                                     <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">15</span>
@@ -147,7 +148,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 p-1 p-md-3">
-                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #d5d5d5;">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #EEE;">
                                 <span style="color: #555;">No of Candidates</span>
                                 <div class="d-flex justify-content-between align-items-center col-12">
                                     <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">15</span>
@@ -162,7 +163,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 p-1 p-md-3">
-                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #d5d5d5;">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #EEE;">
                                 <span style="color: #555;">No. of 1993 Set (Registered)</span>
                                 <div class="d-flex justify-content-between align-items-center col-12">
                                     <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">152</span>
@@ -177,7 +178,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 p-1 p-md-3">
-                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #ddd;">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #F5F5F5;">
                                 <span style="color: #555;">Total Members (Registered)</span>
                                 <div class="d-flex justify-content-between align-items-center col-12">
                                     <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">945</span>
@@ -192,7 +193,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 p-1 p-md-3">
-                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #ddd;">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #F5F5F5;">
                                 <span style="color: #555;">Total Members (Approved)</span>
                                 <div class="d-flex justify-content-between align-items-center col-12">
                                     <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">849</span>
@@ -207,7 +208,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 p-1 p-md-3">
-                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #d5d5d5;">
+                            <div class="position-relative col-12 rounded-3 p-3" style="background-color: #EEE;">
                                 <span style="color: #555;">Total Members (Voted)</span>
                                 <div class="d-flex justify-content-between align-items-center col-12">
                                     <span class="fw-semibold fs-1" style="color: #444; z-index: 2;">419</span>
@@ -224,6 +225,57 @@
                     </div>
                 </div>
             </div>
+
+            <!-- FOOTER -->
+            <footer class="col-12 py-4 py-md-5 px-3 px-md-5" style="background-color: #F5F5F5;">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">About us</h2>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 col-lg-9">
+                                <div class="row">
+                                    <div class="col-md-4 mb-md-0 mb-4">
+                                        <h2 class="footer-heading">V<u>o</u>tes</h2>
+                                        <ul class="px-3">
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Candidates</a></li>
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Positions</a></li>
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Help &amp; Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 mb-md-0 mb-4">
+                                        <h2 class="footer-heading">Ab<u>o</u>ut</h2>
+                                        <ul class="px-3">
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Admins</a></li>
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Staff</a></li>
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Members</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 mb-md-0 mb-4">
+                                        <h2 class="footer-heading">Res<u>o</u>urces</h2>
+                                        <ul class="px-3">
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Security</a></li>
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Charts</a></li>
+                                            <li><a href="#" class="py-1 d-block text-dark text-decoration-none">Privacy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-5">
+                    <div class="col-md-12">
+                        <p class="copyright">
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </main>
 
     </div>
